@@ -1,4 +1,4 @@
-package org.example;
+package com.leetcode;
 
 public class IsPalindromeLinkedList {
     public boolean isPalindrome(ListNode head) {

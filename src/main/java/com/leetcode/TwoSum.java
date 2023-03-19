@@ -1,4 +1,4 @@
-package org.example;
+package com.leetcode;
 
 class TwoSum {
     int[] twoSum(int[] nums, int target) {
