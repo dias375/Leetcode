@@ -2,7 +2,9 @@ package com.leetcode;
 
 public class Main {
     public static void main(String[] args) {
-        FirstBadVersion run = new FirstBadVersion();
-        System.out.println(run.firstBadVersion(100));
+        RotateArray run = new RotateArray();
+
+        int[] a = {10, 20 ,30, 40};
+        run.rotate(a, 9);
     }
 }
