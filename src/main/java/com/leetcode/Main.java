@@ -2,13 +2,13 @@ package com.leetcode;
 
 public class Main {
     public static void main(String[] args) {
-        var run = new SearchInRotatedSortedArray();
+        var run = new SearchTwoDMatrix();
 
-        //int[] nums = {4,5,6,7,0,1,2};
-        int[] nums = {1,3};
-        int target = 0;
+        int[][] nums = {{1,3}};
+        //int[][] nums = {{1,3,5,7}, {10,11,16,20}, {23,30,34,60}};
+        int target = 1;
 
-        System.out.println(run.search(nums, target));
+        System.out.println(run.searchMatrix(nums, target));
 
     }
 }
