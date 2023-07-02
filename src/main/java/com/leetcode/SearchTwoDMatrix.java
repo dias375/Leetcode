@@ -4,8 +4,10 @@ import java.util.Arrays;
 
 public class SearchTwoDMatrix {
 
+    int NOT_FOUND = -1;
+
     public boolean searchMatrix(int[][] matrix, int target) {
-        int contains = -1;
+        int contains = NOT_FOUND;
         for(int[] row : matrix){
             int lastNumber = row[row.length-1];
             if (lastNumber>=target){
@@ -13,6 +15,6 @@ public class SearchTwoDMatrix {
                 break;
             }
         }
-        return contains >= 0;
+        return contains > NOT_FOUND;
     }
 }
