@@ -12,11 +12,9 @@ public class RemoveDuplicatesFromSortedListTwo {
     }
 
     private ListNode stackToListNode(Stack<Integer> stack){
-        ListNode head = new ListNode();
-        ListNode next = null;
+        ListNode head = null;
         while(!stack.isEmpty()){
-            head = new ListNode(stack.pop(), next);
-            next = head;
+            head = new ListNode(stack.pop(), head);
         }
         return head;
     }
