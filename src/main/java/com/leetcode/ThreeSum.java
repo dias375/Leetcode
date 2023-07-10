@@ -5,10 +5,10 @@ import java.util.List;
 
 public class ThreeSum {
     public List<List<Integer>> threeSum(int[] nums) {
-
-
         List<List<Integer>> threeSum = new ArrayList<>();
-
+        return threeSum;
+    }
+}
 
 //        int firstIndex = 0;
 //        for(int firstNum : nums){
@@ -35,9 +35,5 @@ public class ThreeSum {
 //            }
 //            firstIndex++;
 //        }
-        return threeSum;
-
-    }
-}
 
 
