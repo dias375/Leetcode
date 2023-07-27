@@ -27,9 +27,10 @@ public class FloodFill {
         if(sr-1 >= 0) possibleNeighbours.add(new int[]{sr-1, sc});
         possibleNeighbours.removeIf(coordinates -> image[coordinates[0]][coordinates[1]] != sourceColor);
 
-        for(int[] coordinates : possibleNeighbours){
-                floodFill(image, coordinates[0], coordinates[1], color);
+        for(int[] coordinates : possibleNeighbours) {
+            floodFill(image, coordinates[0], coordinates[1], color);
         }
+
         return image;
     }
 }
